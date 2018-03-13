@@ -1,18 +1,34 @@
 # cds-service-example-nodejs
 
+HSPC version of an example/mock CDS Hooks service.
+
 [![Build Status](https://travis-ci.org/cds-hooks/cds-service-example-nodejs.svg?branch=master)](https://travis-ci.org/cds-hooks/cds-service-example-nodejs)
 [![devDependency Status](https://david-dm.org/cds-hooks/cds-service-example-nodejs.svg)](https://david-dm.org/cds-hooks/cds-service-example-nodejs)
 
 Simple nodejs server that acts as a set of CDS services
 
 ## Usage
-This card service can be deployed with docker. By default, the Dockerfile exposes port 9000. Creating the docker container can be done by:
+This card service can be deployed with docker. By default, the Dockerfile exposes port 9000. You can bulid your own docker images with:
 
 ```bash
 $ docker build -t <your-name>/cds-service-example-nodejs .
 Successfully built <container-id>
+Successfully tagged <your-name>/cds-service-example-nodejs
+```
 
-$ docker run -p 9000:9000 -d --rm <your-name>/cds-service-example-nodejs
+Run it as a daemon:
+```bash
+$ docker run -p 9000:9000 -d --rm --name cds-hooks <your-name>/cds-service-example-nodejs
+```
+
+Run it interactively:
+```bash
+$ docker run -p 9000:9000 -it --rm --name cds-hooks <your-name>/cds-service-example-nodejs
+```
+
+Upload it to your repository:
+```bash
+$ docker push <your-name>/cds-service-example-nodejs .
 ```
 
 ## Adding a fixture
