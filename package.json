@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/cds-hooks/cds-service-example-nodejs#readme",
   "dependencies": {
-    "express": "4.13.4",
+    "body-parser": "^1.18.2",
     "cors": "2.7.1",
-    "pug": "2.0.0-alpha6"
+    "express": "4.13.4",
+    "pug": "2.0.0-alpha6",
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "jshint": "2.9.2"
