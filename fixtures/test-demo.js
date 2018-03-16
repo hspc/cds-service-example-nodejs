@@ -2,17 +2,17 @@
 
 module.exports = {
   definition: {
-    id: 'bpmn-demo',
-    name: 'BPMN Demo',
+    id: 'test-demo',
+    name: 'TEST Demo',
     hook: 'patient-view',
-    description: 'Demostration of BPMN for CDS Implementation',
+    description: 'Test of BPMN for CDS Implementation',
     prefetch: {
          patient: 'Patient/{{Patient.id}}'
     }
   },
   payload: {
     cards: [{
-      summary: 'BPMN Example Result',
+      summary: 'BPMN Test Result',
       detail: 'Use Plan 123',
       source: {
         label: 'Healthwise',
@@ -26,7 +26,7 @@ module.exports = {
 	FHIRUrl: 'https://api-v5-dstu2.hspconsortium.org/bpmn/open'
   },
   bpmn : {
-	    container : 'HelloPatient_1.0.0',
-	    process : 'HelloPatient.HelloPatientMini'
+	    container : 'HelloPatient_2.0.0',
+	    process : 'HelloPatient.TestHP'
   }
 };

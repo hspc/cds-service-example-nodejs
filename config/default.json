@@ -1,0 +1,5 @@
+{
+ "BPMN": {
+  	"urlBase": "https://bpmn.hspconsortium.org/kie-server/services/rest/server/containers"
+  }
+}

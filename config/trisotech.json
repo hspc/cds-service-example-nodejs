@@ -1,0 +1,5 @@
+{
+  "BPMN": {
+  	"urlBase": "http://kie.trisotech.com:8080/kie-server/services/rest/server/containers"
+  }
+}
